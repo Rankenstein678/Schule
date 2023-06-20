@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Physik - Induktion und Schwingungen}
+
+\begin{document}
+\maketitle
+
+\section*{Formelsammlung}
+\subsection*{Gemischt}
+\begin{gather*}
+    F = m * g\\
+    \text{Frequenz in Hertz } f= \frac{1}{T}
+\end{gather*}
+\subsection*{Induktion}
+Grundformel:
+\begin{equation*}
+    U_i = -n * \dot{\Phi}
+\end{equation*}
+
+\begin{enumerate}
+    \item \begin{gather*}
+              U_i = -n * B * \dot{A}\\
+              U_i = -n * B * d * v
+          \end{gather*}
+    \item \begin{gather*}
+              U_i = -n * A * \dot{B}
+          \end{gather*}
+          Berechnung des Magnetfelds einer Spule:
+          \begin{gather*}
+              B = \mu_0 * \mu_r * \frac{N}{l} * I\\
+              \dot{B} = \mu_0 * \mu_r * \frac{N}{l} * \dot{I}
+          \end{gather*}
+
+    \item Lenzsches Gesetz:
+          \begin{gather*}
+              I = \frac{U}{R}\\
+              F_L = n * B * I * s
+          \end{gather*}
+\end{enumerate}
+
+\subsection*{Schwingungen}
+Federpendel:
+\begin{equation*}
+    T = 2 * \pi * \sqrt{\frac{m}{D}}
+\end{equation*}
+Fadenpendel:
+\begin{equation*}
+    T = 2 * \Pi * \sqrt{\frac{l}{g}}
+\end{equation*}
+
+Allgemeines:
+\begin{gather*}
+    \omega = \frac{2*\pi}{t}\\
+    s(t) = \hat{s} * sin(\omega*t)\\
+    \dot{s}(t) = \hat{s} * \omega * cos(\omega*t)\\
+    \ddot{s}(t) = \hat{s} * \omega^2 * -sin(\omega*t)
+\end{gather*}
+Start im ausgelenktem Zustand:
+\begin{gather*}
+    s(t) = \hat{s} * cos(\omega*t)\\
+    v(t) = \hat{s} * \omega * -sin(\omega*t)\\
+    a(t) = \hat{s} * \omega^2 * -cos(\omega*t)
+\end{gather*}
+
+\begin{gather*}
+    W_{Spann} = \frac{1}{2} * D * s^2\\
+    W_{Kin} = \frac{1}{2}  m * v\\
+    W_{pot} = m*g*h
+\end{gather*}
+
+\end{document}
