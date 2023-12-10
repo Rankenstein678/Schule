@@ -20,7 +20,8 @@ sehr wenige. In Mikrosim gibt es diese Register:
 \subsection*{Busse}
 Busse sind die Leitungen auf welchen die Daten transportiert werden
 \subsection*{Tore}
-Tore regulieren den Datenfluss auf Bussen. Es können niemals zwei Ausgangstore in ein Eingangstor führen.
+Tore regulieren den Datenfluss auf Bussen. Es können niemals mehrere geöffnete Ausgangstore auf den gleichen Bus führen.
+Dies führt zu einem Kurzschluss
 \subsection*{ALU}
 Die artihmetisch-logische Einheit ist der ''wahre'' Prozessor. Sie performt Operationen mit Eingangswerten. Welche
 Operation ausgeführt wird, bestimmen Steuerleitungen. In Mikrosim beherrscht die ALU nur Addition und Subtraktion
