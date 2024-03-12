@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{gensymb}
+
+
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+
+\begin{document}
+\section*{Oxidationszahlen}
+Oxidationszahlen werden mit der Notation +/- Römische Zahl geschrieben.
+Bei Organischen Molekülen sollten die Moleküle auf jeden Fall gezeichnet werden.
+Bei anorganishcen kann es auch reichen nach den Faustregeln vorzugehen:
+\begin{enumerate}
+    \item Wasserstoff +\Rmnum{1}
+    \item Fluor -\Rmnum{1}
+    \item Sauerstoff -\Rmnum{2}
+    \item Halogene -\Rmnum{1}
+\end{enumerate}
+
+\section*{RedOx Reaktionen}
+Bei RedOx Reaktionen werden Elektronen nach einem Donator-Akzeptor-Prinzip übertragen.
+Der Donator wird oxidiert, während der Akzeptor reduziert wird. Bei einer RedOx Reaktion
+muss immer beides gleichzeitig stattfinden. Eine RedOx Reaktion lässt sich an den Oxidationszahlen
+erkennen. Die OZ des reduzierte Stoffs wird reduziert, während die des oxidierten steigt.
+
+Die Schreibeweise für ein korrespondierendes RedOx Paar ist: reduzierte Form/oxidierte Form, z.B. $Cu/Cu^{2+}$
+oder $2 Cl^-/Cl_2$
+
+\subsection*{Die RedOx Reihe}
+RedOx Reaktion laufen nur in eine Richtung spontan ab. Daher lassen sie sich in eine Reihe einordnen.
+
+\includegraphics*[width=\textwidth]{img/Redoxreihe}
+
+\section*{Galvanische Zellen}
+\includegraphics*[width=\textwidth]{img/galvanische_zelle.jpg}
+
+\subsection*{Lösungstension}
+In einer Lösung gehen Stoffe häufig als Ionen in Lösung. Dabei hinterlassen sie Elektronen. Das ganze ist
+eine Gleichgewichtsreaktion
+    \begin{equation}
+        Cu(s) \rightleftharpoons Cu^{2+}(aq) + 2 e^-
+    \end{equation}
+\subsection*{Konzentrationselement}
+Bei einem Konzentrationselement werden 2 gleiche Halbzellen verwendet. Der einzige Unterschied 
+ist die Konzentration der Salzlösung. Ist die Konzentration geringer, so verschiebt sich die Konzentration
+nach ''rechts''. DAher wird lädt sich die Elektrode stärker auf und das Potential wird kleiner.
+Pro Größenordnung unter 1 mol/L sinkt das Potenzial um 0,059 Volt.
+
+\subsection*{Die Standardwasserstoffhalbzelle}
+Dem RedOx Paar $H_2/2H^+$ der Standardwasserstoffhalbzelle wird als Referenz das Elektrodenpotenzial 0V zugeordnet
+In der Halbzelle befindet sich eine Salzsäure Lösung mit der Konzentration c = 1 mol/L. Es wird Wasserstoff
+bei einer Temperatur von 25\textdegree C mit 1013 hPa unter eine platinierte Platinelektrode gesprudelt.
+
+Anhand der Wasserstoffhalbzelle kann jeder Halbzelle ein Standardelektrodenpotenzial zugeordnet werden:
+\begin{equation}
+    U = \Delta E\degree = \Delta E\degree (Akzeptor Halbzelle) - \Delta E\degree (Donator Halbzelle)    
+\end{equation}
+
+\section*{Elektrolyse}
+Bei einer Elektrolyse wird das Prinzip einer Galvanischen Zelle umgekehrt. 
+Sie ist die Umkehrreaktion der spontan ablaufenden Reaktion in der GZ.
+\subsection*{Zersetzungsspannung}
+Für eine kontinuierliche Abscheidung von Elektrolyseprodukten ist eine Mindestspannung, die Zersetzungsspannung
+$U_Z$ nötig. Bereits bei geringen Spannungen entstehen Elektrolyseprodukte. Somit ist eine GZ und eine Gegenspannung 
+entsteht. Trotzdem fließt unterhalb von $U_Z$ bereits ein geringer Strom, auch \emph{Diffusionsstrom} genannt.
+Dies geschieht, da kleine Teile der Elektrolyseprodukte in Lösung gehen und damit für die Rückreaktion ausfallen..
+
+Die Differenz zwischen tatsächlicher und theoretischer Spannung heißt Überspannung $U_{\ddot{u}}$
+
+\begin{equation}
+    U_{\ddot{u}} = U_{gemessen} - U_{theoretisch}
+\end{equation}
+
+Es läuft stehts die Reaktion mit der kleinsten Zersetzungsspannung ab
+
+
+\end{document}
+
+
